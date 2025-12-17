@@ -1,0 +1,21 @@
+{
+  "name": "postman-api-ai",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pm:sync": "dotenv node scripts/exportPostmanCollection.js",
+    "pm:test": "dotenv -- node scripts/runNewman.js",
+    "pm:sync-test": "npm run pm:sync && npm run pm:test"
+  },
+  "dependencies": {
+    "dotenv-cli": "^11.0.0"
+  },
+  "devDependencies": {
+    "newman": "^6.2.1",
+    "newman-reporter-htmlextra": "^1.23.1"
+  }
+}
