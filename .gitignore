@@ -40,7 +40,6 @@ postman/**/generated/
 # Local Postman scripts
 # =========================
 scripts/exportPostmanCollection.js
-scripts/runNewman.js
 
 # =========================
 # Temporary / build files
